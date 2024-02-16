@@ -2,7 +2,7 @@
 
 url="https://www.openml.org/data/download/21756251/dataset"
 fichier="dataset_"
-dossier="group4/data"
+dossier="data"
 
 if [ ! -d "$dossier" ]; then
 
