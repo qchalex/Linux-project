@@ -7,4 +7,6 @@ WORKDIR /app
 COPY . /app
 
 RUN python3 -m pip install -r requirements.txt
+RUN chmod +x collect.sh
+
 CMD ["bash", "launch.sh"]
