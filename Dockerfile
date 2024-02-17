@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+RUN mkdir /app
 
 RUN apt update && apt-get install -y curl && apt-get install -y python3 && apt-get install -y python3-pip
 
