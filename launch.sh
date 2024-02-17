@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Lancement du script collect.sh..."
-./collect.sh
+collect.sh
 
 if [ $? -eq 0 ]; then
     echo "Le script collect.sh s'est exécuté avec succès."
