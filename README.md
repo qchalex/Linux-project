@@ -32,7 +32,7 @@ Suivez ces instructions pour lancer l'application.
    Pour lancer l'application, utilisez la commande suivante :
    
    ```bash
-   docker run -it -p 8050:8058 customer:latest
+   docker run -it -p 8050:8050 customer:latest
    ```
 
    Après avoir exécuté cette commande, vous pourrez accéder à l'application via votre navigateur en vous connectant à localhost sur le port 8050.
