@@ -55,12 +55,13 @@ def hide_or_show_sidebar_while_clicking_on_sidebar_button(n_clicks):
     if n_clicks % 2 == 0:
         sidebar_style = SIDEBAR_STYLE
         cur_nclick = "HIDDEN"
-        accordion_style = {"marginLeft": "20rem", "transition": "all 0.5s"}
+        accordion_style = {"marginLeft": "20rem",
+                           "transition": "all 0.5s"}
     else:
         sidebar_style = SIDEBAR_HIDDEN
         cur_nclick = "SHOW"
-        accordion_style = {"marginLeft": "0", "transition": "all 0.5s"}
-
+        accordion_style = {"marginLeft": "0",
+                           "transition": "all 0.5s"}
     return sidebar_style, cur_nclick, accordion_style
 
 
