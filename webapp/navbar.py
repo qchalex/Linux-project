@@ -17,7 +17,9 @@ navbar = dbc.Navbar(
                 dbc.Col(
                     html.A(
                         dbc.Row(
-                            dbc.Col(html.Img(src='data:image/svg+xml;base64,{}'.format(encoded_svg), height='85vh')),
+                            dbc.Col(html.Img(src='data:image/svg+xml;base64,{}'.format(encoded_svg), 
+                                             height='85vh')
+                                   ),
                         ),
                         className="d-flex align-items-center justify-content-end",
                         href='/'
@@ -27,7 +29,11 @@ navbar = dbc.Navbar(
                 dbc.Col(
                     dbc.Nav(
                         dbc.NavItem(
-                            dbc.Button(id="sidebar-button", n_clicks=0, className='bi bi-filter-left', color="dark")
+                            dbc.Button(id="sidebar-button",
+                                n_clicks=0,
+                                className='bi bi-filter-left',
+                                color="dark"
+                                )
                         ),
                         className="d-flex align-items-center justify-content-end",
                         navbar=True,
@@ -41,6 +47,8 @@ navbar = dbc.Navbar(
     ],
     color="dark",
     dark=True,
-    className="p-3 sticky-top", #remain at the top of the screen while scrolling
-    style={"height": "8vh", "min-height": "8vh"},#change the height of the navbar
+    className="p-3 sticky-top", 
+    #remain at the top of the screen while scrolling
+    style={"height": "8vh", "min-height": "8vh"},
+    #change the height of the navbar
 )
