@@ -6,7 +6,8 @@ from webapp.static.params import SidebarElement
 
 sidebar = html.Div(
     [
-        html.H5("Sidebar Filter", style={"margin-top": "10px", "margin-left": "25px"}),
+        html.H5("Sidebar Filter", style={"margin-top": "10px", 
+                                         "margin-left": "25px"}),
         dbc.Card(SidebarElement.GENDER),
         dbc.Card(SidebarElement.SENIOR_CITIZEN),
         dbc.Card(SidebarElement.PHONE_SERVICE),
