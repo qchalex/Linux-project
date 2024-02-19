@@ -11,8 +11,8 @@ from webapp.sidebar import sidebar
 from webapp.style.sidebar_style import SIDEBAR_STYLE, SIDEBAR_HIDDEN
 from webapp.layout import layout
 from webapp.static.params import Paths
-from webapp.static.get_sidebar_elements_value import GetSidebarElementsValue
-
+from webapp.static.get_sidebar_elements_value \
+    import GetSidebarElementsValue
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -22,7 +22,8 @@ data['TotalCharges'] = data['TotalCharges'].replace('', pd.NA)
 data['TotalCharges'] = pd.to_numeric(data['TotalCharges'], errors='coerce')
 data['TotalCharges'] = data['TotalCharges'].astype(float)
 
-app = dash.Dash(external_stylesheets=[dbc.themes.ZEPHYR, dbc.icons.BOOTSTRAP])
+app = dash.Dash(external_stylesheets=[dbc.themes.ZEPHYR,
+                                      dbc.icons.BOOTSTRAP])
 app.title = 'Customers Web Application'
 
 
