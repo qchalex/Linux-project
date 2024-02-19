@@ -188,10 +188,17 @@ def update_graph(gender_value, senior_citizen_value,
     )
 
     online_backup_counts = data_copy['OnlineBackup'].value_counts()
+    df = pd.DataFrame({
+        'OnlineBackup': online_backup_counts.index, 
+        'Count': online_backup_counts.values
+    })
     figure8 = px.bar(
-        x=online_backup_counts.index, y=online_backup_counts.values, 
+        df, 
+        x='OnlineBackup', 
+        y='Count', 
         title='Online Backup Distribution'
     )
+
 
     return figure1, figure2, figure3, figure4, figure5, figure6, figure7, figure8
 
