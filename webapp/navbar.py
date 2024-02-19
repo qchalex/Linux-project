@@ -18,7 +18,7 @@ navbar = dbc.Navbar(
                     html.A(
                         dbc.Row(
                             dbc.Col(html.Img(src='data:image/svg+xml;base64,{}'.format(encoded_svg), 
-                                             height='85vh')
+                                             height='75vh')
                                    ),
                         ),
                         className="d-flex align-items-center justify-content-end",
